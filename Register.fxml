@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="850.0" style="-fx-background-color: FF7A41;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+   <children>
+      <Pane fx:id="firstnameTextField" layoutX="9.0" layoutY="10.0" prefHeight="476.0" prefWidth="832.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <ImageView fitHeight="54.0" fitWidth="165.0" layoutX="470.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Screenshot%202022-05-13%20191206.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="314.0" layoutY="-16.0" prefHeight="84.0" prefWidth="207.0" text="Register ">
+               <font>
+                  <Font name="Bodoni MT Bold" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="50.0" prefHeight="17.0" prefWidth="76.0" text="First name">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstnTextField" layoutX="14.0" layoutY="80.0" prefHeight="25.0" prefWidth="800.0" promptText="Please enter your first name here" />
+            <Label layoutX="17.0" layoutY="111.0" prefHeight="17.0" prefWidth="76.0" text="Last name">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastnTextField" layoutX="14.0" layoutY="138.0" prefHeight="25.0" prefWidth="800.0" promptText="Please enter your last name here" />
+            <Label layoutX="17.0" layoutY="172.0" prefHeight="17.0" prefWidth="76.0" text="Username">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unameTextField" layoutX="14.0" layoutY="206.0" prefHeight="25.0" prefWidth="800.0" promptText="Please enter your username here" />
+            <Label layoutX="17.0" layoutY="238.0" prefHeight="17.0" prefWidth="76.0" text="Password">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="302.0" prefHeight="17.0" prefWidth="134.0" text="Confirm password">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="365.0" prefHeight="17.0" prefWidth="76.0" text="Email">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTextField" layoutX="14.0" layoutY="394.0" prefHeight="25.0" prefWidth="800.0" promptText="Please enter your email adress here" />
+            <Button id="redline" layoutX="270.0" layoutY="427.0" mnemonicParsing="false" onAction="#registerButtonAction" prefHeight="38.0" prefWidth="126.0" text="Register">
+               <stylesheets>
+                  <URL value="@application.css" />
+                  <URL value="@../../../../Downloads/stylesheet.css" />
+               </stylesheets>
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Button>
+            <Button id="redline" layoutX="414.0" layoutY="427.0" mnemonicParsing="false" onAction="#switchToLogIn" prefHeight="38.0" prefWidth="126.0" text="Back to Login">
+               <stylesheets>
+                  <URL value="@application.css" />
+                  <URL value="@../../../../Downloads/stylesheet.css" />
+               </stylesheets>
+               <font>
+                  <Font name="Bodoni MT Black" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="emailWarningLabel" layoutX="75.0" layoutY="367.0" prefHeight="17.0" prefWidth="195.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordWarningLabel" layoutX="154.0" layoutY="304.0" prefHeight="17.0" prefWidth="195.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="registerLabel" layoutX="565.0" layoutY="427.0" prefHeight="39.0" prefWidth="169.0" textFill="#0037ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="setpasswordPasswordField" layoutX="16.0" layoutY="270.0" prefHeight="25.0" prefWidth="800.0" promptText="Please enter your password here" />
+            <PasswordField fx:id="confirmPasswordPasswordField" layoutX="14.0" layoutY="328.0" prefHeight="25.0" prefWidth="800.0" promptText="Please confirm your password here" />
+            <Label fx:id="setpasswordWarningLabel1" layoutX="93.0" layoutY="240.0" prefHeight="17.0" prefWidth="195.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameWarningLabel" layoutX="93.0" layoutY="174.0" prefHeight="17.0" prefWidth="195.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="firstnameWarningLabel" layoutX="93.0" layoutY="52.0" prefHeight="17.0" prefWidth="195.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastnameWarningLabel" layoutX="93.0" layoutY="113.0" prefHeight="17.0" prefWidth="195.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
